@@ -189,7 +189,7 @@ WantedBy=multi-user.target
 ##### For **</my/path/to>**(parent directory of the application):
 - For *proxmox-temperature-sensors-to-mqtt* in */home/root/proxmox-temperature-sensors-to-mqtt*: `/home/user/app`
 - For *whale* in */turtle/dragon/unicorn*: `/turtle/dragon/unicorn`
-##### For **<user>** (you in the system):
+##### For <user> (you in the system):
 - For *root*: `root`
 - For *user*: `user`
 3. Save and close the file
