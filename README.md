@@ -183,12 +183,13 @@ Customize the `config.json` file for your setup. Layout:
 
 ### 🐧 **Unix Systems**
 ```sh
-./proxmox-temperature-sensors-to-mqtt
+chmod +x ./proxmox-temperature-sensors-to-mqtt.<OS>
+./proxmox-temperature-sensors-to-mqtt.<OS>
 ```
 
 ### 🖼️ **Windows 10+**
 ```sh
-proxmox-temperature-sensors-to-mqtt
+proxmox-temperature-sensors-to-mqtt.<OS>
 ```
 
 ### ⚡ **Run Directly with Go**
