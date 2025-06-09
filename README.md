@@ -267,4 +267,4 @@ sudo systemctl enable --now proxmox-temperature-sensors-to-mqtt.service
 *You can open an issue on GitHub.*
 
 ### 🔹 **"Why does this program use the MIT license?**
-*This program uses the MIT license because it is one of the most popular licenses in the world. If you have suggestions for changing the license, you can open an issue on GitHub and share your opinion*
+*This program uses the MIT license because it is one of the most popular licenses in the world. If you have suggestions for changing the license, you can open an issue on GitHub and share your opinion.*
