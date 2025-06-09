@@ -42,18 +42,30 @@ Local Compile:
 go build -v ./...
 ```
 Cross Compile:
-On Unix-like systems:
-```sh
-env GOOS=<OS> GOARCH=<ARCH> go build -v ./...
-```
-On Windows:
-```sh
-GOOS=<OS> GOARCH=<ARCH> go build -v ./...
-```
-Everywhere in PowerShell:
-```
-$env:GOOS=<OS>; $env:GOARCH=<ARCH>; go build -v ./...
-```
+- **On Unix-like systems (Linux, macOS, etc.):**
+
+  ```sh
+  env GOOS=<OS> GOARCH=<ARCH> go build -v ./...
+  ```
+
+- **On Windows (Command Prompt):**
+
+  ```sh
+  set GOOS=<OS> && set GOARCH=<ARCH> && go build -v ./...
+  ```
+
+- **In PowerShell (any OS):**
+
+  ```powershell
+  $env:GOOS=<OS>; $env:GOARCH=<ARCH>; go build -v ./...
+  ```
+
+**Important:** Replace **<OS>** and **<ARCH>** with actual values. For example:
+- For Linux on AMD64: `GOOS=linux GOARCH=amd64`
+- For Windows on ARM64: `GOOS=windows GOARCH=arm64`
+
+For a full list of supported values, check the [Go documentation](https://go.dev/doc/install/source#environment).
+
 ---
 
 ## ⚙️ **Configuration**
