@@ -1,4 +1,4 @@
-name: Go Build & Test
+name: Go Build & Test (macOS)
 
 on:
   push:
@@ -8,10 +8,7 @@ on:
 
 jobs:
   build:
-    strategy:
-      matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
-    runs-on: ${{ matrix.os }}
+    runs-on: macos-latest
 
     steps:
     - uses: actions/checkout@v4
