@@ -38,8 +38,8 @@ curl -O https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/release
 **Important:** Replace **<OS>** with an actual value. For example:
 - For Linux on AMD64: [linux-amd64](https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/releases/download/v1.0/proxmox-temperature-sensors-to-mqtt.linux-amd64)
 - Full version: `https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/releases/download/v1.0/proxmox-temperature-sensors-to-mqtt.linux-amd64`
-- For Windows on ARM64: [windows-arm64](https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/releases/download/v1.0/proxmox-temperature-sensors-to-mqtt.linux-arm64)
-- Full version: `https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/releases/download/v1.0/proxmox-temperature-sensors-to-mqtt.linux-arm64`
+- For Windows on ARM64: [windows-arm64](https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/releases/download/v1.0/proxmox-temperature-sensors-to-mqtt.windows-arm64)
+- Full version: `https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/releases/download/v1.0/proxmox-temperature-sensors-to-mqtt.windows-arm64`
 
 For a full list of supported values, check the [Github Page](https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/releases/tag/v1.0).
 
