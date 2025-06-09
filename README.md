@@ -61,7 +61,7 @@ Cross Compile:
 - **In PowerShell (any OS):**
 
   ```powershell
-  $env:GOOS=<OS>; $env:GOARCH=<ARCH>; go build -v ./...
+  $env:GOOS="<OS>"; $env:GOARCH="<ARCH>"; go build -v ./...
   ```
 
 **Important:** Replace **<OS>** and **<ARCH>** with actual values. For example:
