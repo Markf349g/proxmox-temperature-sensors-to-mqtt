@@ -73,8 +73,41 @@ For a full list of supported values, check the [Go documentation](https://go.dev
 ---
 
 ## ⚙️ **Configuration**
-
-Customize the config file for your setup. Here’s an example with explanations:
+Customize the `config.json` file for your setup. Layout:
+```json
+{
+    "SSH": {
+        "host": "",
+        "_host": "Necessarily: Enter host of ssh server[127.0.0.1:22]",
+        "username": "",
+        "_username": "Necessarily: Enter username of ssh user[user]",
+        "password": "",
+        "_password": "Necessarily: Enter password of ssh user[12345]",
+        "delay": "",
+        "_delay": "Necessarily: Enter delay between errors in ms[1000]"
+    },
+    "DATA": {
+        "prefix": "",
+        "_prefix": "Optional: Enter prefix to the data[/homeassistant/sensor/proxmox_system]",
+        "delay": "",
+        "_delay": "Necessarily: Enter delay between sending data in minutes[1]",
+        "difference": "",
+        "_difference": "Necessarily: The required temperature difference[5]"
+    },
+    "MQTT": {
+        "host": "",
+        "_host": "Necessarily: Enter host of mqtt server[tcp://127.0.0.1:1883]",
+        "username": "",
+        "_username": "Necessarily: Enter username of mqtt client[user]",
+        "password": "",
+        "_password": "Necessarily: Enter password of mqtt client[12345]",
+        "client-id": "",
+        "_client-id": "Necessarily: Enter client id of mqtt client[MQTT-Telemetry[proxmox-system]]",
+        "delay": "",
+        "_delay": "Necessarily: Enter delay between errors in ms[1000]"
+    }
+}
+```
 
 ### 📝 **Configuration Example**
 ```json
@@ -232,3 +265,6 @@ sudo systemctl enable --now proxmox-temperature-sensors-to-mqtt.service
 
 ### 🔹 **Something isn't working. Why is this happening, and where can I write or whom can I ask?**
 *You can open an issue on GitHub.*
+
+### 🔹 **"Why does this program use the MIT license?**
+*This program uses the MIT license because it is one of the most popular licenses in the world. If you have suggestions for changing the license, you can open an issue on GitHub and share your opinion*
