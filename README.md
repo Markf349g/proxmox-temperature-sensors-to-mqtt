@@ -142,33 +142,33 @@ Customize the `config.json` file for your setup. Layout:
 {
     "SSH": {
         "host": "127.0.0.1:22",
-        "_host": "Required: Specify the SSH server host [127.0.0.1:22]",
-        "username": "root",
-        "_username": "Required: Specify the SSH username [root]",
-        "password": "12345",
-        "_password": "Required: Specify the SSH password [12345]",
+        "_host": "Necessarily: Enter host of ssh server[127.0.0.1:22]",
+        "username": "ssh-user",
+        "_username": "Necessarily: Enter username of ssh user[mark]",
+        "password": "ssh-password",
+        "_password": "Necessarily: Enter password of ssh user[12345]",
         "delay": "1000",
-        "_delay": "Required: Specify delay between errors in ms [1000]"
+        "_delay": "Necessarily: Enter delay between errors in ms[1000]"
     },
     "DATA": {
         "prefix": "/homeassistant/sensor/proxmox_system",
-        "_prefix": "Optional: Specify the data prefix [/homeassistant/sensor/proxmox_system]",
+        "_prefix": "Optional: Enter prefix to the data[/homeassistant/sensor/proxmox_system]",
         "delay": "1",
-        "_delay": "Required: Specify delay between data sends in minutes [1]",
+        "_delay": "Necessarily: Enter delay between sending data in minutes[1]",
         "difference": "5",
-        "_difference": "Required: Specify temperature difference [5]"
+        "_difference": "Necessarily: The required temperature difference[5]"
     },
     "MQTT": {
         "host": "tcp://127.0.0.1:1883",
-        "_host": "Required: Specify the MQTT server host [tcp://127.0.0.1:1883]",
+        "_host": "Necessarily: Enter host of mqtt server[tcp://127.0.0.1:1883]",
         "client-id": "MQTT-Telemetry[proxmox-system]",
-        "_client-id": "Required: Specify the MQTT client ID [MQTT-Telemetry[proxmox-system]]",
-        "username": "user",
-        "_username": "Required: Specify the MQTT username [user]",
-        "password": "12345",
-        "_password": "Required: Specify the MQTT password [12345]",
+        "_client-id": "Necessarily: Enter client id of mqtt client[MQTT-Telemetry[proxmox-system]]",
+        "username": "mqtt-user",
+        "_username": "Necessarily: Enter username of mqtt client[user]",
+        "password": "mqtt-password",
+        "_password": "Necessarily: Enter password of mqtt client[12345]",
         "delay": "1000",
-        "_delay": "Required: Specify delay before disconnect in ms [1000]"
+        "_delay": "Necessarily: Enter delay before disconnection[0]"
     }
 }
 ```
