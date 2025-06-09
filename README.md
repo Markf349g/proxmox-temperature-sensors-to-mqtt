@@ -1,7 +1,7 @@
 # 📡 Proxmox Temperature Sensors to MQTT 🌡
 ### 🚀 **Easily Send Proxmox Sensor Temperatures via MQTT!**
 
-> **Note**: This is an unfinished version of the repository. It will become fully functional after data updates. This note will be removed in the final version.
+> **Note**: This project was inspired by the website https://bootuse.com/2023/04/14/cpu-temp-nvme-temp-from-proxmox-to-home-assistant.
 
 ---
 
@@ -203,7 +203,11 @@ Close: `Ctrl+X`
 - For **Vim**: 
 Save:  `:w`
 Close: `:q`
-4. ***Reboot the system***
+4. Activate the service
+```sh
+sudo systemctl enable --now proxmox-temperature-sensors-to-mqtt.service
+```
+5. ***Reboot the system***
 ---
 
 ## 🔥 Build Status
@@ -211,3 +215,20 @@ Close: `:q`
 |-------|-------|---------|
 | [![Linux](https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/actions/workflows/build&test%5Blinux%5D.yml/badge.svg)](https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/actions/workflows/build&test%5Blinux%5D.yml) | [![macOS](https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/actions/workflows/build&test%5Bmacos%5D.yml/badge.svg)](https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/actions/workflows/build&test%5Bmacos%5D.yml) | [![Windows](https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/actions/workflows/build&test%5Bwindows%5D.yml/badge.svg)](https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/actions/workflows/build&test%5Bwindows%5D.yml) |
 ---
+
+## ❓ FAQ (Frequently Asked Questions)
+
+### 🔹 **Why did you use SSH to collect metrics?**
+*When adding network adapters in Proxmox, the system does not pass information about these adapters to the LXC container, which makes data retrieval difficult.*
+
+### 🔹 **Why did you create your own program instead of using existing ones?**
+*I was inspired by the website https://bootuse.com/2023/04/14/cpu-temp-nvme-temp-from-proxmox-to-home-assistant. It had ideas on how to transfer CPU and NVMe temperature data to Home Assistant via MQTT, but those ideas were not ideal for my use case, so I created my own implementation.*
+
+### 🔹 **Where and to whom will this program connect via SSH?**
+*This program should connect to any Proxmox (not LXC) user who has permission to read all temperature sensor files. If you are concerned about security, you can connect the program to an LXC container user, but in some specific cases, the program may not work as intended. For home labs, this issue is quite rare, so using SSH connections to an LXC container user should generally be fine.*
+
+### 🔹 **Why do I even need to send Proxmox sensor data via MQTT?**
+*Services and applications like Home Assistant can receive information via the MQTT protocol. This allows you to configure Home Assistant to monitor the temperature on Proxmox and, for example, set up a notification system if the temperature is too high or too low. Additionally, you can view data charts from Proxmox.*
+
+### 🔹 **Something isn't working. Why is this happening, and where can I write or whom can I ask?**
+*You can open an issue on GitHub.*
