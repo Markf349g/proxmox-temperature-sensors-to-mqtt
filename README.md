@@ -27,6 +27,24 @@ Go is highly portable:
 - Build the program for any supported OS.
 - For Proxmox, an **LXC container** is recommended.
 
+### **Download the Application**
+```sh
+wget https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/releases/download/v1.0/proxmox-temperature-sensors-to-mqtt.<OS>
+```
+or
+```sh
+curl https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/releases/download/v1.0/proxmox-temperature-sensors-to-mqtt.<OS>
+```
+**Important:** Replace **<OS>** with an actual value. For example:
+- For Linux on AMD64: [linux-amd64](https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/releases/download/v1.0/proxmox-temperature-sensors-to-mqtt.linux-amd64)
+- Full version: `https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/releases/download/v1.0/proxmox-temperature-sensors-to-mqtt.linux-amd64`
+- For Windows on ARM64: [windows-arm64](https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/releases/download/v1.0/proxmox-temperature-sensors-to-mqtt.linux-arm64)
+- Full version: `https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/releases/download/v1.0/proxmox-temperature-sensors-to-mqtt.linux-arm64`
+
+For a full list of supported values, check the [Github Page](https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/releases/tag/v1.0).
+
+***You can skip everything else and go straight to the [configuration](#_Configuration_93)***
+
 ### 📥 **Clone the Repository**
 Grab the project from GitHub:
 ```sh
@@ -34,9 +52,10 @@ git clone https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt.git
 ```
 
 ### 📦 **Install dependencies**
+*You need a Go compiler (version 1.24 or later) to build this program.*  
+Download all dependencies before building:  
 ```sh
 go mod tidy
-```
 
 ### 🏗️ **Build the Application**
 Compile it with this command:
