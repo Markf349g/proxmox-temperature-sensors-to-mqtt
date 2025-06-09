@@ -44,11 +44,11 @@ curl -O https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/release
 For a full list of supported values, check the [Github Page](https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/releases/tag/v1.0).
 
 ```sh
-wget https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/releases/download/v1.0/config.json<OS>
+wget https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/releases/download/v1.0/config.json
 ```
 or
 ```sh
-curl -O https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/releases/download/v1.0/config.json<OS>
+curl -O https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/releases/download/v1.0/config.json
 ```
 
 ***You can skip everything else and go straight to the [configuration](#_Configuration_93)***
