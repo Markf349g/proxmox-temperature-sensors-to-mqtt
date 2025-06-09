@@ -34,6 +34,11 @@ Grab the project from GitHub:
 git clone https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt.git
 ```
 
+### 📦 **Install dependencies**
+```sh
+go mod tidy
+```
+
 ### 🏗️ **Build the Application**
 Compile it with this command:
 
