@@ -33,7 +33,7 @@ wget https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/releases/d
 ```
 or
 ```sh
-curl https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/releases/download/v1.0/proxmox-temperature-sensors-to-mqtt.<OS>
+curl -O https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/releases/download/v1.0/proxmox-temperature-sensors-to-mqtt.<OS>
 ```
 **Important:** Replace **<OS>** with an actual value. For example:
 - For Linux on AMD64: [linux-amd64](https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/releases/download/v1.0/proxmox-temperature-sensors-to-mqtt.linux-amd64)
@@ -44,7 +44,11 @@ curl https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/releases/d
 For a full list of supported values, check the [Github Page](https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/releases/tag/v1.0).
 
 ```sh
-curl https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/releases/download/v1.0/config.json<OS>
+wget https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/releases/download/v1.0/config.json<OS>
+```
+or
+```sh
+curl -O https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/releases/download/v1.0/config.json<OS>
 ```
 
 ***You can skip everything else and go straight to the [configuration](#_Configuration_93)***
