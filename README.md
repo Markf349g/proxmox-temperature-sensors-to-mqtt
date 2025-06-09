@@ -134,8 +134,14 @@ go run .
 ---
 
 ### 📝 **StartUp**
-Linux:
-Cron(easy, not recommended)
+### Windows 10+:
+1. Right-click the executable file. 
+2. In the menu, select *New* → *Shortcut*.
+3. Copy the shortcut to `%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup`
+4. ***Reboot the system***
+
+### Linux:
+#### Cron(easy, **not recommended**)
 1. Open Cron in edit mode
 ```sh
 crontab -e
@@ -145,18 +151,19 @@ crontab -e
 @reboot </my/path/to/app>
 ```
 **Important:** Replace **</my/path/to/app>** with actual value. For example:
-- For proxmox-temperature-sensors-to-mqtt in /home/root/proxmox-temperature-sensors-to-mqtt: `/home/user/app/proxmox-temperature-sensors-to-mqtt`
-- For whale in /turtle/dragon/unicorn: `/turtle/dragon/unicorn/whale`
+- For *proxmox-temperature-sensors-to-mqtt* in */home/root/proxmox-temperature-sensors-to-mqtt*: `/home/user/app/proxmox-temperature-sensors-to-mqtt`
+- For *whale* in */turtle/dragon/unicorn*: `/turtle/dragon/unicorn/whale`
 3. Save and close the file
-- For GNU nano: 
+- For **GNU nano**: 
 Save:  `Ctrl+S`
 Close: `Ctrl+X`
-- For Vim: 
+- For **Vim**: 
 Save:  `:w`
 Close: `:q`
-4. Reboot the system
-Systemd(difficult, recommended)
-1. Create and edit the file /etc/systemd/system/proxmox-temperature-sensors-to-mqtt.service
+4. ***Reboot the system***
+
+#### Systemd(difficult, **recommended**)
+1. Create and edit the file */etc/systemd/system/proxmox-temperature-sensors-to-mqtt.service*
 ```sh
 sudo nano /etc/systemd/system/proxmox-temperature-sensors-to-mqtt.service
 ```
@@ -176,23 +183,21 @@ WorkingDirectory=</my/path/to>
 WantedBy=multi-user.target
 ```
 **Important:** Replace **</my/path/to/app>**, **</my/path/to>**, and **<user>** with actual value. For example:
-For **</my/path/to/app>**(path to the application):
-- For proxmox-temperature-sensors-to-mqtt in /home/root/proxmox-temperature-sensors-to-mqtt: `/home/user/app/proxmox-temperature-sensors-to-mqtt`
-- For whale in /turtle/dragon/unicorn: `/turtle/dragon/unicorn/whale`
-For **</my/path/to>**(parent directory of the application):
-- For proxmox-temperature-sensors-to-mqtt in /home/root/proxmox-temperature-sensors-to-mqtt: `/home/user/app`
-- For whale in /turtle/dragon/unicorn: `/turtle/dragon/unicorn`
-For **<user>**(you in the system):
-- For root: `root`
-- For user: `user`
+##### For **</my/path/to/app>**(path to the application):
+- For *proxmox-temperature-sensors-to-mqtt* in */home/root/proxmox-temperature-sensors-to-mqtt*: `/home/user/app/proxmox-temperature-sensors-to-mqtt`
+- For *whale* in */turtle/dragon/unicorn*: `/turtle/dragon/unicorn/whale`
+#####  For **</my/path/to>**(parent directory of the application):
+- For *proxmox-temperature-sensors-to-mqtt* in */home/root/proxmox-temperature-sensors-to-mqtt*: `/home/user/app`
+- For *whale* in */turtle/dragon/unicorn*: `/turtle/dragon/unicorn`
+##### For **<user>**(you in the system):
+- For *root*: `root`
+- For *user*: `user`
 3. Save and close the file
-- For GNU nano: 
+- For **GNU nano**: 
 Save:  `Ctrl+S`
 Close: `Ctrl+X`
-- For Vim: 
+- For **Vim**: 
 Save:  `:w`
 Close: `:q`
-4. Reboot the system
-
-
+4. ***Reboot the system***
 ---
