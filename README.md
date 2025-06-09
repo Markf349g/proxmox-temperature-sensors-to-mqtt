@@ -1,5 +1,4 @@
-# 📡 Proxmox Temperature Sensors to MQTT 🌡️
-
+# 📡 Proxmox Temperature Sensors to MQTT 🌡
 ### 🚀 **Easily Send Proxmox Sensor Temperatures via MQTT!**
 
 > **Note**: This is an unfinished version of the repository. It will become fully functional after data updates. This note will be removed in the final version.
@@ -205,4 +204,10 @@ Close: `Ctrl+X`
 Save:  `:w`
 Close: `:q`
 4. ***Reboot the system***
+---
+
+## 🔥 Build Status
+| Linux | macOS | Windows |
+|-------|-------|---------|
+| [![Linux](https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/actions/workflows/build&test%5Blinux%5D.yml/badge.svg)](https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/actions/workflows/build&test%5Blinux%5D.yml) | [![macOS](https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/actions/workflows/build&test%5Bmacos%5D.yml/badge.svg)](https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/actions/workflows/build&test%5Bmacos%5D.yml) | [![Windows](https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/actions/workflows/build&test%5Bwindows%5D.yml/badge.svg)](https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/actions/workflows/build&test%5Bwindows%5D.yml) |
 ---
