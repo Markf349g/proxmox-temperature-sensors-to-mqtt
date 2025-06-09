@@ -186,7 +186,7 @@ WantedBy=multi-user.target
 ##### For **</my/path/to/app>**(path to the application):
 - For *proxmox-temperature-sensors-to-mqtt* in */home/root/proxmox-temperature-sensors-to-mqtt*: `/home/user/app/proxmox-temperature-sensors-to-mqtt`
 - For *whale* in */turtle/dragon/unicorn*: `/turtle/dragon/unicorn/whale`
-#####  For **</my/path/to>**(parent directory of the application):
+##### For **</my/path/to>**(parent directory of the application):
 - For *proxmox-temperature-sensors-to-mqtt* in */home/root/proxmox-temperature-sensors-to-mqtt*: `/home/user/app`
 - For *whale* in */turtle/dragon/unicorn*: `/turtle/dragon/unicorn`
 ##### For **<user>**(you in the system):
