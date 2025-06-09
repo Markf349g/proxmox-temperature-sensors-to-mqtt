@@ -51,7 +51,7 @@ or
 curl -O https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt/releases/download/v1.0/config.json
 ```
 
-***You can skip everything else and go straight to the [configuration](#_Configuration_93)***
+***You can skip everything else and go straight to the [configuration](https://github.com/Markf349g/proxmox-temperature-sensors-to-mqtt?tab=readme-ov-file#%EF%B8%8F-configuration)***
 
 ### 📥 **Clone the Repository**
 Grab the project from GitHub:
