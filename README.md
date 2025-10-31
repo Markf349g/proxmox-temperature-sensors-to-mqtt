@@ -1,3 +1,4 @@
+(broken version; not usable; needs complete remake; avoid ssh; avoid not existing devices)
 # 📡 Proxmox Temperature Sensors to MQTT 🌡
 ### 🚀 **Easily Send Proxmox Sensor Temperatures via MQTT!**
 
